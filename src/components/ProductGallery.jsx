@@ -8,6 +8,7 @@ function ProductGallery() {
   const [itemsPerSlide, setItemsPerSlide] = useState(3);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [showImageModal, setShowImageModal] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -82,8 +83,14 @@ function ProductGallery() {
     setShowModal(true);
   };
 
+  const handleShowImageModal = (product) => {
+    setSelectedProduct(product);
+    setShowImageModal(true);
+  };
+
   const handleCloseModal = () => {
     setShowModal(false);
+    setShowImageModal(false);
     setSelectedProduct(null);
   };
 
@@ -114,10 +121,14 @@ function ProductGallery() {
                       variant="top"
                       src={product.image}
                       alt={product.alt}
+                      style={{ cursor: "pointer" }}
+                      onClick={() => handleShowImageModal(product)}
                     />
                     <Card.Body>
                       <Card.Title>{product.name}</Card.Title>
-                      <Card.Text>{truncateText(product.description, 80)}</Card.Text>
+                      <Card.Text>
+                        {truncateText(product.description, 80)}
+                      </Card.Text>
                       <p className="h4 mb-3">
                         ${new Intl.NumberFormat("es-CL").format(product.price)}
                       </p>
@@ -143,10 +154,20 @@ function ProductGallery() {
           ))}
         </Carousel>
 
+        {/* Modal detalles de productos */}
         <ProductModal
           product={selectedProduct}
           show={showModal}
           handleClose={handleCloseModal}
+          imageOnly={false}
+        />
+
+        {/* Modal de imagen */}
+        <ProductModal
+          product={selectedProduct}
+          show={showImageModal}
+          handleClose={handleCloseModal}
+          imageOnly={true}
         />
       </Container>
     </section>
