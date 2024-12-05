@@ -2,10 +2,10 @@ export const products = [
   {
     id: 1,
     name: "Base para relleno",
-    description: "Base cremosa para rellenar macarons, tartas o postres.",
-    price: 4990,
+    description: "Pack de 10 pares de tapitas de macarons para rellenar.",
+    price: 6000,
     image: "assets/img/base-para-relleno.jpg",
-    alt: "Base para relleno artesanal lista para usar en macarons o postres.",
+    alt: "Tapitas de macarons listas para rellenar.",
     ingredients: "Crema de leche, azúcar glas, mantequilla, esencia de vainilla",
     allergens: "Contiene lácteos",
     weight: 500, // en gramos
@@ -40,6 +40,19 @@ export const products = [
   },
   {
     id: 4,
+    name: "Pack de 17 macarons",
+    description: "Pack de 17 macarons artesanales, ideal para compartir en eventos o regalar.",
+    price: 18000,
+    image: "assets/img/pack-de-17-macarons.jpg",
+    alt: "Caja de 12 macarons artesanales con presentación elegante.",
+    ingredients: "Almendra molida, azúcar glas, claras de huevo, rellenos variados según sabor",
+    allergens: "Contiene frutos secos (almendras), huevo, lácteos",
+    weight: 300, // en gramos
+    nutritionalInfo: "Calorías: 120 kcal por pieza",
+    storageInfo: "Conservar refrigerado a 4°C. Consumir antes de 3 días."
+  },
+  {
+    id: 5,
     name: "Relleno especial",
     description: "Relleno especial de chocolate amargo con toque de frambuesa.",
     price: 5990,
@@ -52,11 +65,11 @@ export const products = [
     storageInfo: "Conservar refrigerado a 4°C. Consumir antes de 7 días."
   },
   {
-    id: 5,
+    id: 6,
     name: "Macarons personalizados",
     description: "Macarons personalizados con diseños únicos para eventos especiales.",
     price: 9990,
-    image: "https://images.unsplash.com/photo-1697378594766-e22f529d7b36?w=600",
+    image: "assets/img/macarons-personalizados.jpg",
     alt: "Macarons personalizados decorados con colores y diseños especiales.",
     ingredients: "Almendra molida, azúcar glas, claras de huevo, colorantes naturales, relleno a elección",
     allergens: "Contiene frutos secos (almendras), huevo, lácteos",
