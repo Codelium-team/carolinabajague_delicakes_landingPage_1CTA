@@ -128,12 +128,12 @@ function ProductGallery() {
                         >
                           Comprar
                         </Button>
-                        <Button
+                        {/* <Button
                           variant="outline-secondary"
                           onClick={() => handleShowModal(product)}
                         >
                           Más detalles
-                        </Button>
+                        </Button> */}
                       </div>
                     </Card.Body>
                   </Card>
