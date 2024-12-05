@@ -117,7 +117,7 @@ function ProductGallery() {
                     />
                     <Card.Body>
                       <Card.Title>{product.name}</Card.Title>
-                      <Card.Text>{truncateText(product.description, 30)}</Card.Text>
+                      <Card.Text>{truncateText(product.description, 80)}</Card.Text>
                       <p className="h4 mb-3">
                         ${new Intl.NumberFormat("es-CL").format(product.price)}
                       </p>
