@@ -2,8 +2,8 @@ export const products = [
   {
     id: 1,
     name: "Base para relleno",
-    description: "Base cremosa para rellenar macarons, tartas o postres.",
-    price: 4990,
+    description: "Pack de 10 pares de tapitas de macarons para rellenar.",
+    price: 6000,
     image: "assets/img/base-para-relleno.jpg",
     alt: "Base para relleno artesanal lista para usar en macarons o postres.",
     ingredients: "Crema de leche, azúcar glas, mantequilla, esencia de vainilla",

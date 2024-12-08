@@ -50,7 +50,7 @@ function Footer() {
                 <FaWhatsapp size={40} />
               </a>
               <a
-                href="https://www.instagram.com/bonbon.macaron"
+                href="https://www.instagram.com/bonbon.macaron_bycarol?igsh=MW1ydHNpMTJ2dmk1eA%3D%3D&utm_source=ig_contact_invite"
                 className="social-link"
                 target="_blank"
                 rel="noopener noreferrer"
